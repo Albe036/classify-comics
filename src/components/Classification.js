@@ -1,27 +1,55 @@
-import React, { useState } from 'react';
+import React, { useReducer } from 'react';
 import Star from '../static/star.svg'
 
-
+const reducerStyle = (state, action) =>{
+    let newState = {...state}
+    switch(action.type){
+        case "primero":{
+            newState.select = "ction1"
+            break;
+        }
+        case "segundo":{
+            newState.select = "ction2"
+            break;
+        }
+        case "tercero":{
+            newState.select = "ction3"
+            break;
+        }
+        case "cuarto":{
+            newState.select = "ction4"
+            break;
+        }
+        case "quinto":{
+            newState.select = "ction5"
+            break;
+        }
+        case "salir":{
+            newState.select = "ction"
+            break;
+        }
+        default:{
+            break
+        }
+    }
+    return newState
+}
 
 const Classification = (props) =>{
 
-    const [styles, setStyles] = useState("ction");
-    const change1 = () => setStyles("ction1")
-    const change2 = () => setStyles("ction2")
-    const change3 = () => setStyles("ction3")
-    const change4 = () => setStyles("ction4")
-    const change5 = () => setStyles("ction5")
-    const change0 = () => setStyles("ction")
+    const [style, dispatchStyle] = useReducer(reducerStyle, {
+        select: "ction"
+    })
 
     const { generate } = props;
 
     return(
-        <div className={styles} onMouseLeave={change0}>
-                <img src={Star} className="img" id="img1" onClick={generate} onMouseEnter={change1}/>
-                <img src={Star} className="img" id="img2" onClick={generate} onMouseEnter={change2}/>
-                <img src={Star} className="img" id="img3" onClick={generate} onMouseEnter={change3}/>
-                <img src={Star} className="img" id="img4" onClick={generate} onMouseEnter={change4}/>
-                <img src={Star} className="img" id="img5" onClick={generate} onMouseEnter={change5}/>
+        <div className={style.select} onMouseLeave={(e)=>dispatchStyle({type: "salir"})}>
+                <img src={Star} className="img" id="img1" onClick={generate} onMouseEnter={(e) =>dispatchStyle({type: "primero"})}/>
+                <img src={Star} className="img" id="img2" onClick={generate} onMouseEnter={(e)=>dispatchStyle({type: "segundo"})}/>
+                <img src={Star} className="img" id="img3" onClick={generate} onMouseEnter={(e)=>dispatchStyle({type: "tercero"})}/>
+                <img src={Star} className="img" id="img4" onClick={generate} onMouseEnter={(e)=>dispatchStyle({type: "cuarto"})}/>
+                <img src={Star} className="img" id="img5" onClick={generate} onMouseEnter={(e)=>dispatchStyle({type: "quinto"})}/>
         </div>
     )
 }

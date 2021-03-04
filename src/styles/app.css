@@ -1,16 +1,16 @@
 body {
-  background-color: #a7c5eb;
-  font-family: 'Ubuntu';
+  background-color: #ffe3fe;
+  font-family: 'Ubuntu','Roboto', sans-serif;
 }
 
 .title {
-  color: #4a47a3;
+  color: #93329e;
   text-align: center;
 }
 
 .picture {
   text-align: center;
-  background-color: #709fb0;
+  background-color: #b4aee8;
   width: 800px;
   margin: auto;
   padding: 20px 0px;
@@ -22,7 +22,7 @@ body {
   height: 60px;
   margin: 0px 20px;
   border-radius: 60%;
-  background-color: #a7c5eb;
+  background-color: #ffe3fe;
 }
 
 .ction {
@@ -30,6 +30,7 @@ body {
   flex-direction: row;
   width: 500px;
   margin: 20px auto;
+  cursor: pointer;
 }
 
 .ction1 {
@@ -37,10 +38,11 @@ body {
   flex-direction: row;
   width: 500px;
   margin: 20px auto;
+  cursor: pointer;
 }
 
 .ction1 #img1 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction2 {
@@ -48,14 +50,15 @@ body {
   flex-direction: row;
   width: 500px;
   margin: 20px auto;
+  cursor: pointer;
 }
 
 .ction2 #img1 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction2 #img2 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction3 {
@@ -63,18 +66,19 @@ body {
   flex-direction: row;
   width: 500px;
   margin: 20px auto;
+  cursor: pointer;
 }
 
 .ction3 #img1 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction3 #img2 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction3 #img3 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction4 {
@@ -82,22 +86,23 @@ body {
   flex-direction: row;
   width: 500px;
   margin: 20px auto;
+  cursor: pointer;
 }
 
 .ction4 #img1 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction4 #img2 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction4 #img3 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction4 #img4 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction5 {
@@ -105,24 +110,34 @@ body {
   flex-direction: row;
   width: 500px;
   margin: 20px auto;
+  cursor: pointer;
 }
 
 .ction5 #img1 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction5 #img2 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction5 #img3 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction5 #img4 {
-  background-color: #413c69;
+  background-color: #440a67;
 }
 
 .ction5 #img5 {
-  background-color: #413c69;
+  background-color: #440a67;
+}
+
+.description {
+  width: 780px;
+  margin: 10px auto;
+  text-align: justify;
+  background-color: #b4aee8;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
