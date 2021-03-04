@@ -4,7 +4,7 @@ const Picture = (props) =>{
 
     const { image, alt } = props;
     return(
-        <div className="picture">
+        <div className="picture animate__headShake">
             <img className="animate__headShake" src={image} alt={alt}/>
         </div>
     )
